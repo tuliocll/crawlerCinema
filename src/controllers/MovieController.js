@@ -19,8 +19,8 @@ class MovieController {
   }
 
   async index(req, res) {
-    console.log("teste");
     try {
+      console.log("teste");
       const retorno = await Movie.find();
       return res.json(retorno);
     } catch (err) {

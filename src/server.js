@@ -13,8 +13,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 cron.schedule("0 0 * * *", () => {
   console.log("::Atualizar::");
-  movieController.store();
 });
+movieController.store();
 
 app.get("/get", movieController.index);
 
