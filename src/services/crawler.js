@@ -24,8 +24,11 @@ function rasparDados(cb) {
 
       const [old, newstr] = text.split("eventToBuyData");
 
-      const [oo, aa] = newstr.split("}];");
+      const [oo] = newstr.split("}];");
       return cb(JSON.parse(oo.slice(3, oo.length) + "}]"));
+    } else {
+      console.log("Erro, script vazio");
+      return false;
     }
   });
 }

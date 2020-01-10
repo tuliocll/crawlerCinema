@@ -20,7 +20,7 @@
     "mongodb": "^3.3.3",
     "mongoose": "^5.7.9",
     "node-cron": "^2.0.3",
-    "nodemon": "^1.19.4",
+    "nodemon": "^2.0.2",
     "request": "^2.88.0"
   },
   "devDependencies": {

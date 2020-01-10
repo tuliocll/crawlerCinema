@@ -38,6 +38,16 @@ const MovieSchema = new mongoose.Schema({
     type: String,
     require: true
   },
+  votes: {
+    type: Number,
+    require: false,
+    default: 1
+  },
+  rate: {
+    type: Number,
+    require: false,
+    default: 1
+  },
   created_at: {
     type: Date,
     default: Date.now
